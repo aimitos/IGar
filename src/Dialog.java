@@ -17,11 +17,6 @@ public class Dialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
     }
-    
-    public Dialog(java.awt.Frame parent){
-        super(parent);
-        initComponents();
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
