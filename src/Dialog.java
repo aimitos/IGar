@@ -64,10 +64,14 @@ public class Dialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        getOwner().setVisible(true);
-        dispose();
+        closeDialog();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void closeDialog(){
+        getOwner().setVisible(true);
+        Dialog.this.dispose();
+    }
+    
     /**
      * @param args the command line arguments
      */

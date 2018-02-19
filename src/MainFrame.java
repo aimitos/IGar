@@ -61,10 +61,14 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Dialog dialog = new Dialog(this);
-        dialog.setVisible(true);
+        createDialog();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void createDialog(){
+        Dialog dialog = new Dialog(MainFrame.this);
+        dialog.setVisible(true);
+    }
+    
     /**
      * @param args the command line arguments
      */
