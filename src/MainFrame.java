@@ -65,7 +65,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void createDialog(){
-        Dialog dialog = new Dialog(MainFrame.this);
+        Dialog dialog = new Dialog(MainFrame.this, true);
         dialog.setVisible(true);
     }
     
