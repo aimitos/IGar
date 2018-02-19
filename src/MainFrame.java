@@ -29,6 +29,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -36,6 +37,13 @@ public class MainFrame extends javax.swing.JFrame {
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("Button");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ActionPerformed(evt);
             }
         });
 
@@ -47,13 +55,19 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(138, 138, 138)
                 .addComponent(jButton1)
                 .addContainerGap(158, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(15, 15, 15))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(121, 121, 121)
                 .addComponent(jButton1)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(14, 14, 14))
         );
 
         pack();
@@ -63,6 +77,11 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         createDialog();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ActionPerformed
+        // TODO add your handling code here:
+        createDialog();
+    }//GEN-LAST:event_ActionPerformed
 
     private void createDialog(){
         Dialog dialog = new Dialog(MainFrame.this, true);
@@ -106,5 +125,6 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     // End of variables declaration//GEN-END:variables
 }
